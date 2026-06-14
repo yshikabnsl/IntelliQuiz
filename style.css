@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #F3E4C9;
+  color: #A98B76;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #BFA28C;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2em;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+#score {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question-card {
+  background: #BFA28C;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+#timer {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#options button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  width: 80%;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #A98B76;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+#options button:hover {
+  background: #F3E4C9;
+  color: #A98B76;
+}
+
+.correct {
+  background-color: green !important;
+  color: white;
+}
+
+.wrong {
+  background-color: red !important;
+  color: white;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #A98B76;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#next-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#lifelines button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #BFA28C;
+  color: #fff;
+  cursor: pointer;
+}
+
+#lifelines button:hover {
+  background: #A98B76;
+}
+
+#end-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-card {
+  background: #BFA28C;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.end-card h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.end-card button {
+  padding: 12px 20px;
+  background: #F3E4C9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #A98B76;
+  font-weight: bold;
+}
+
+/* Start Quiz button styling */
+#start-screen button {
+  margin: 20px auto;
+  padding: 18px 30px;        /* bigger size */
+  font-size: 1.2em;          /* larger text */
+  border: none;
+  border-radius: 8px;
+  background: #A98B76;       /* same palette as other buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+}
+
+#start-screen button:hover {
+  background: #F3E4C9;       /* hover effect consistent */
+  color: #A98B76;
+}
+
+
+
+
+
+
+
+
+
+
+
+
